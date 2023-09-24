@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AMS</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        
+    </header>
+    <input type="checkbox" name="claro/oscuro" id="checkitem" onclick="enableDarkMode()">
+    <section id="titulo">
+        <div>
+            <h2>HI! I´m Álvaro Martín</h2>
+            <h3>Front end Developer</h3>
+        </div>
+        <img src="img/codificacion (1).png" alt="">
+    </section>
+
+    <section id="skills">
+        <h4>SKILLS</h4>
+        <div>
+            <img src="img/html-5.png" alt="HTML5">
+            <img src="img/css-3.png" alt="CSS">
+            <img src="img/js.png" alt="JAVASCRIPT">
+            <img src="img/servidor-sql.png" alt="SQL">
+            <img src="" alt="ANGULAR">
+            <img src="img/nodejs.png" alt="NODE">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h4>PROJECTS</h4>
+    </section>
+
+    <section id="contact">
+        <h4>CONTACT</h4>
+        <form action="">
+            <p>
+                <label for="nombre">Name</label>
+                <input type="text" name="introducir_nombre" id="nombre" placeholder="Enter name">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="introducir_email" id="email" placeholder="Enter email">
+            </p>
+            <p>
+                <label for="asunto">Message Subject</label>
+                <input type="text" name="introducir_asunto" id="asunto" placeholder="Write a subject">
+            </p>
+            <p>
+                <label for="mensaje">Message</label>
+                <textarea name="introducir_mensaje" id="mensaje" cols="30" rows="10" placeholder="Leave your message here"></textarea>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </section>
+
+
+    <footer>
+        <div>
+            <div>
+                <img src="img/github (2).png" alt="">
+                <img src="img/linkedin.png" alt="">
+                <img src="img/instagram.png" alt="">
+            </div>
+            <p>
+                &copy;Alvaro2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

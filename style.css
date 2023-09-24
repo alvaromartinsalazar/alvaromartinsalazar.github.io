@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Staatliches&family=Titan+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+html{
+    background-color: #EEDEC5;
+}
+
+h4{
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+
+/*MENU*/
+header h1{
+    color: #EEDEC5;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #003314;
+    color: #EEDEC5;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0px;
+}
+
+header a{
+    text-decoration: none;
+    color: #EEDEC5;
+    margin-right: 20px;
+}
+
+header a:last-of-type{
+    margin-right: 0px;
+}
+
+header a:hover{
+    color: white;
+}
+
+/*TITULO*/
+#titulo{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-size: 200%;
+    margin-bottom: 50px;
+    color: #003314;
+}
+
+#titulo img{
+    width: 20%;
+    animation: rotar 2s alternate-reverse infinite;
+    filter: drop-shadow(0px 7px 7px #003314);
+}
+
+@keyframes rotar{
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+/*SKILLS*/
+#skills{
+    margin-bottom: 50px;
+}
+
+#skills img{
+    width: 3%;
+    margin-right: 20px;
+}
+
+#skills img:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+/*PROJECTS*/
+
+
+/*CONTACT*/
+#contact{
+    background-color: #003314;
+    width: 40%;
+    padding: 30px 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#contact h4{
+    color: #EEDEC5;
+}
+
+#contact form{
+    width: 60%; 
+    height: auto;
+    margin: 0px auto;
+	border-radius: 10px;  
+    padding: 20px;
+    background-color: #EEDEC5; 
+    padding-left: 30px; 
+}
+
+#contact form input{
+    background-color: #EEDEC5; 
+    width: 90%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #003314; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+#contact form textarea{
+    background-color: #EEDEC5; 
+	width: 90%; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #003314; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+#contact form ::placeholder{
+    color: #343b37;
+}
+
+#contact form button{
+    background-color: #003314;
+    color: #EEDEC5;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+#contact form button:hover{
+    background-color: #EEDEC5;
+    color: #003314;
+    border: 1px solid #003314;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #003314;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+
+footer p{
+    color: #EEDEC5;
+}
+
+footer div{
+    margin: 0px auto;
+    width: 30%;
+}
+
+footer div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+footer img{
+    width: 15%;
+}
+
+/*BOTON MODO OSCURO/CLARO*/
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #003314;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5 easy;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #EEDEC5;
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+}
+
+.dark-mode{
+    background-color: #003314;
+    color: #EEDEC5;
+}
+
+.dark-mode header{
+    background-color: #EEDEC5;
+}
+
+.dark-mode header a{
+    color: #003314;
+}
+
+.dark-mode footer{
+    background-color: #EEDEC5;
+}
+
+.dark-mode footer p{
+    color: #003314;
+}
