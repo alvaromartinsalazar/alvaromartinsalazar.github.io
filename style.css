@@ -17,12 +17,6 @@ body div{
     display: flex;
 }
 
-#flecha{
-    width: 10%;
-    rotate: -90deg;
-    display: block;
-}
-
 aside{
     width: 9%;
     max-width: 250px;
