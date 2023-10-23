@@ -11,12 +11,10 @@
 
 html{
     background-color: #262626;
+    height: 100vh;
 }
 
-body div{
-    display: flex;
-}
-
+/*MENU*/
 aside{
     width: 9%;
     max-width: 250px;
@@ -24,6 +22,7 @@ aside{
     background-color: #262626;
     box-shadow: 20px 20px 10px #2B2B2B;
     text-align: center;
+    position: absolute;
 }
 
 aside img{
@@ -38,10 +37,12 @@ aside button{
     cursor: pointer;
 }
 
+/*SECCION PRINCIPAL*/
 #p_principal{
     width: 60%;
     margin: auto;
-    display: block;
+    padding-top: 9%;
+    padding-left: 5%;
 }
 
 #p_principal div{
@@ -62,3 +63,24 @@ h1{
     font-size: 60px;
 }
 
+#flecha{
+    margin-top: 2%;
+}
+
+#flecha img{
+    rotate: -8deg;
+    width: 10%;
+    margin: auto;
+    animation: flecha 2s alternate-reverse infinite;
+}
+
+@keyframes flecha {
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+/*PROYECTOS*/
