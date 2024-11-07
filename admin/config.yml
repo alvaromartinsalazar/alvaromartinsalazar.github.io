@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: alvaromartinsalazar/alvaromartinsalazar.github.io # Cambia esto al nombre de tu repositorio
+  branch: main # La rama en la que tienes tu sitio, normalmente es main o master
+
+media_folder: "images/uploads" # Carpeta donde se guardarán las imágenes subidas desde Netlify CMS
+public_folder: "/images/uploads" # URL pública para acceder a las imágenes
+
+collections:
+  - name: "blog" # Nombre de la colección (puedes cambiarlo a "blog" si prefieres)
+    label: "Entradas" # Etiqueta que verás en el panel de Netlify CMS
+    folder: "posts" # Carpeta donde se guardarán las publicaciones
+    create: true # Permitir crear nuevas entradas
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Formato del nombre de archivo de las publicaciones
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
+
